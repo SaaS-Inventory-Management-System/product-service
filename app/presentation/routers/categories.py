@@ -9,7 +9,7 @@ from uuid import UUID
 from fastapi import APIRouter, HTTPException
 
 from app.domain.errors import CategoryNotFoundError, CategoryAlreadyExistsError, CategoryInUseError
-from app.application.usecases.category import (
+from app.application.usecases.categories import (
     GetCategory, 
     CreateCategory,
     ListCategories,
@@ -17,7 +17,7 @@ from app.application.usecases.category import (
     UpdateCategory,
     DeleteCategory
 )
-from app.domain.ports import CategoryRepository, ArticleRepository
+from app.application.ports import CategoryRepository, ArticleRepository
 from app.presentation.schemas import (
     CategoryCreateRequest, 
     CategoryResponse,

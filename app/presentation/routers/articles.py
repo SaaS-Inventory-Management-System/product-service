@@ -9,7 +9,7 @@ from uuid import UUID
 from fastapi import APIRouter, HTTPException
 
 from app.domain.errors import ArticleNotFoundError, ArticleAlreadyExistsError, CategoryNotFoundError
-from app.application.usecases.article import (
+from app.application.usecases.articles import (
     GetArticle, 
     CreateArticle,
     ListArticles,
@@ -17,7 +17,7 @@ from app.application.usecases.article import (
     UpdateArticle,
     DeleteArticle
 )
-from app.domain.ports import ArticleRepository, CategoryRepository
+from app.application.ports import ArticleRepository, CategoryRepository
 from app.presentation.schemas import (
     ArticleCreateRequest, 
     ArticleResponse,

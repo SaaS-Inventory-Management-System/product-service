@@ -1,7 +1,7 @@
 from uuid import UUID, uuid4
 
 from app.domain.entities import Category
-from app.domain.ports import CategoryRepository, ArticleRepository
+from app.application.ports import CategoryRepository, ArticleRepository
 
 from ...domain.errors import CategoryNotFoundError, CategoryAlreadyExistsError, CategoryInUseError
 

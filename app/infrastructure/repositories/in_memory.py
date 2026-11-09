@@ -1,7 +1,7 @@
 from uuid import UUID
 
 from app.domain.entities import Article, Category
-from app.domain.ports import ArticleRepository, CategoryRepository
+from app.application.ports import ArticleRepository, CategoryRepository
 
 
 class InMemoryArticleRepository(ArticleRepository):

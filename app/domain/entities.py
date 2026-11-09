@@ -13,7 +13,8 @@ class Article:
     deleted_at: datetime | None = None
 
     def __post_init__(self):
-        if not self.name.strip():
+        self.name = self.name.strip()
+        if not self.name:
             raise ValueError("Article name cannot be left blank.")
 
         if not self.sku.strip():

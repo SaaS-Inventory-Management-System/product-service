@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from uuid import UUID
 
-from .entities import Article, Category
+from ..domain.entities import Article, Category
 
 
 class ArticleRepository(ABC):
